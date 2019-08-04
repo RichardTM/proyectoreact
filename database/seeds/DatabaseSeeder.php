@@ -18,7 +18,12 @@ class DatabaseSeeder extends Seeder
             'niveles',
             'lecciones',
             'desarrolladores',
-            'lenguas'
+            'lenguas',
+            'sexos',
+            'municipios',
+            'departamentos',
+            'paises',
+            'perfiles'
         ]);
 
 
@@ -27,6 +32,11 @@ class DatabaseSeeder extends Seeder
         $this->call(CursoSeeder::class);
         $this->call(NivelSeeder::class);
         $this->call(LeccionSeeder::class);
+        $this->call(SexoSeeder::class);
+        $this->call(MunicipioSeeder::class);
+        $this->call(PaisSeeder::class);
+        $this->call(DepartamentoSeeder::class);
+        $this->call(PerfilSeeder::class);
     }
 
     protected function truncateTables(array $tables){

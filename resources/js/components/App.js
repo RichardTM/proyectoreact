@@ -18,11 +18,12 @@ const App = () => {
             <div className="title m-b-md">
                 <h1 className="display-1">CURSO REACT</h1>
             </div>
-            <div className="row justify-content-center">
-
-               <Link to={'/curso/create' }  className="btn btn-success" >
+            <Link to={'/curso/create' }  className="btn btn-success" >
                     Crear Curso
                 </Link>
+            <div className="row justify-content-center">
+
+
                <CourseList/>
 
             </div>
